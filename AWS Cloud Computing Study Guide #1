@@ -1,282 +1,240 @@
-<h1>AWS Cloud Computing Study Guide #1</h1>
+# AWS Cloud Computing Study Guide #1
 
-<img src="1-cloudconcepts.png" alt="AWS Logo">
+![AWS Logo](1-cloudconcepts.png)
 
-<h1> Cloud Concepts <h1>
+## Cloud Concepts
 
-<h2>Basics</h2>
+### Basics
 
-<h3>Q: What's Cloud Computing in simple terms?</h3>
-<p>A: Think of it as renting computer power over the internet instead of buying and maintaining your own hardware. It's like using someone else's super-powerful computer remotely.</p>
+#### Q: What's Cloud Computing in simple terms?
+A: Think of it as renting computer power over the internet instead of buying and maintaining your own hardware. It's like using someone else's super-powerful computer remotely.
 
-<h3>Q: What are the main cloud deployment models?</h3>
-<p>A: There are three main types:
-<ul>
-  <li>Public cloud: Shared resources you can rent. Think of it as an apartment building.</li>
-  <li>Private cloud: Your own dedicated setup. Like having your own house.</li>
-  <li>Hybrid cloud: A mix of both. You've got an apartment but also keep some stuff at home.</li>
-</ul>
-</p>
+#### Q: What are the main cloud deployment models?
+A: There are three main types:
+- Public cloud: Shared resources you can rent. Think of it as an apartment building.
+- Private cloud: Your own dedicated setup. Like having your own house.
+- Hybrid cloud: A mix of both. You've got an apartment but also keep some stuff at home.
 
-<h3>Q: Why do people love cloud computing?</h3>
-<p>A: It's got some sweet perks:
-<ul>
-  <li>Scalability: Grow or shrink your resources as needed.</li>
-  <li>Cost-effective: Only pay for what you use.</li>
-  <li>Flexibility: Work from anywhere with internet access.</li>
-  <li>Reliability: Built-in backups and redundancy.</li>
-</ul>
-</p>
+#### Q: Why do people love cloud computing?
+A: It's got some sweet perks:
+- Scalability: Grow or shrink your resources as needed.
+- Cost-effective: Only pay for what you use.
+- Flexibility: Work from anywhere with internet access.
+- Reliability: Built-in backups and redundancy.
 
-<h2>Amazon EC2</h2>
+### Amazon EC2
 
-<h3>Q: What flavors does Amazon EC2 come in?</h3>
-<p>A: EC2 has different instance types for various needs:
-<ul>
-  <li>General purpose: Jack-of-all-trades, good for most workloads.</li>
-  <li>Compute optimized: For heavy number-crunching tasks.</li>
-  <li>Memory optimized: When you need to handle lots of data quickly.</li>
-  <li>Storage optimized: For tasks that read/write data intensively.</li>
-</ul>
-</p>
+#### Q: What flavors does Amazon EC2 come in?
+A: EC2 has different instance types for various needs:
+- General purpose: Jack-of-all-trades, good for most workloads.
+- Compute optimized: For heavy number-crunching tasks.
+- Memory optimized: When you need to handle lots of data quickly.
+- Storage optimized: For tasks that read/write data intensively.
 
-<h3>Q: What's a Load Balancer and why should I care?</h3>
-<p>A: Think of it as a smart traffic cop for your website. It directs incoming requests to different servers to prevent any one server from getting overwhelmed.</p>
+#### Q: What's a Load Balancer and why should I care?
+A: Think of it as a smart traffic cop for your website. It directs incoming requests to different servers to prevent any one server from getting overwhelmed.
 
-<h2>AWS Global Infrastructure</h2>
+### AWS Global Infrastructure
 
-<h3>Q: What's the deal with AWS Regions?</h3>
-<p>A: Regions are geographic areas with multiple data centers. They help improve performance and reliability by letting you put your stuff closer to your users.</p>
+#### Q: What's the deal with AWS Regions?
+A: Regions are geographic areas with multiple data centers. They help improve performance and reliability by letting you put your stuff closer to your users.
 
-<h3>Q: How does CloudFront fit into all this?</h3>
-<p>A: CloudFront is AWS's content delivery network. It's like having a bunch of mini-servers all over the world to serve your content faster.</p>
+#### Q: How does CloudFront fit into all this?
+A: CloudFront is AWS's content delivery network. It's like having a bunch of mini-servers all over the world to serve your content faster.
 
-<h3>Q: What are Edge locations and why are they cool?</h3>
-<p>A: Edge locations are like CloudFront's sidekicks. They cache your content closer to users for even faster access.</p>
+#### Q: What are Edge locations and why are they cool?
+A: Edge locations are like CloudFront's sidekicks. They cache your content closer to users for even faster access.
 
-<h3>Q: How does Route 53 work with Edge locations?</h3>
-<p>A: Route 53 uses Edge locations to route users to the nearest content source, kind of like a global GPS for your website.</p>
+#### Q: How does Route 53 work with Edge locations?
+A: Route 53 uses Edge locations to route users to the nearest content source, kind of like a global GPS for your website.
 
-<h3>Q: What's AWS Outposts?</h3>
-<p>A: It's like having a slice of AWS in your own data center. Useful if you need to keep some stuff on-premises.</p>
+#### Q: What's AWS Outposts?
+A: It's like having a slice of AWS in your own data center. Useful if you need to keep some stuff on-premises.
 
-<h3>Q: How's Lambda different from Outposts?</h3>
-<p>A: Lambda is serverless computing - you just run code without managing servers. Outposts is actual hardware you can touch.</p>
+#### Q: How's Lambda different from Outposts?
+A: Lambda is serverless computing - you just run code without managing servers. Outposts is actual hardware you can touch.
 
-<h2>Availability and Reliability</h2>
+### Availability and Reliability
 
-<h3>Q: What's high availability all about?</h3>
-<p>A: It's about keeping your services up and running, even if something goes wrong. Like having a backup generator for your house.</p>
+#### Q: What's high availability all about?
+A: It's about keeping your services up and running, even if something goes wrong. Like having a backup generator for your house.
 
-<h3>Q: Why is AWS's global infrastructure a big deal?</h3>
-<p>A: It gives you better performance, reliability, and disaster recovery options. It's like having backup plans for your backup plans.</p>
+#### Q: Why is AWS's global infrastructure a big deal?
+A: It gives you better performance, reliability, and disaster recovery options. It's like having backup plans for your backup plans.
 
-<h3>Q: What exactly is an AWS Region?</h3>
-<p>A: It's a physical location with multiple data centers. Think of it as AWS's version of a city.</p>
+#### Q: What exactly is an AWS Region?
+A: It's a physical location with multiple data centers. Think of it as AWS's version of a city.
 
-<h3>Q: Why should I care about data sovereignty?</h3>
-<p>A: It's about keeping data within specific geographic boundaries. Important if you're dealing with strict regulations.</p>
+#### Q: Why should I care about data sovereignty?
+A: It's about keeping data within specific geographic boundaries. Important if you're dealing with strict regulations.
 
-<h3>Q: How do Regions help with disaster recovery?</h3>
-<p>A: Multiple regions give you backup locations. If one region goes down, you can fail over to another.</p>
+#### Q: How do Regions help with disaster recovery?
+A: Multiple regions give you backup locations. If one region goes down, you can fail over to another.
 
-<h3>Q: What should I think about when choosing a Region?</h3>
-<p>A: Consider things like latency (how fast), cost, available services, and compliance requirements.</p>
+#### Q: What should I think about when choosing a Region?
+A: Consider things like latency (how fast), cost, available services, and compliance requirements.
 
-<h3>Q: What's an Availability Zone?</h3>
-<p>A: It's an isolated data center within a Region. Think of it as a neighborhood in AWS's city.</p>
+#### Q: What's an Availability Zone?
+A: It's an isolated data center within a Region. Think of it as a neighborhood in AWS's city.
 
-<h3>Q: Why have multiple Availability Zones?</h3>
-<p>A: For redundancy and fault tolerance. If one zone has issues, the others can pick up the slack.</p>
+#### Q: Why have multiple Availability Zones?
+A: For redundancy and fault tolerance. If one zone has issues, the others can pick up the slack.
 
-<h3>Q: How does AWS keep communication between AZs fast?</h3>
-<p>A: They're connected by high-speed, low-latency networks. Like super-fast highways between neighborhoods.</p>
+#### Q: How does AWS keep communication between AZs fast?
+A: They're connected by high-speed, low-latency networks. Like super-fast highways between neighborhoods.
 
-<h3>Q: Why run EC2 instances across multiple AZs?</h3>
-<p>A: For high availability and fault tolerance. If one AZ goes down, your app keeps running in the others.</p>
+#### Q: Why run EC2 instances across multiple AZs?
+A: For high availability and fault tolerance. If one AZ goes down, your app keeps running in the others.
 
-<h2>AWS Services and Interactions</h2>
+### AWS Services and Interactions
 
-<h3>Q: What's an API in AWS-speak?</h3>
-<p>A: It's how you talk to AWS services programmatically. Like giving commands to AWS in a language it understands.</p>
-
-<h3>Q: How do most people interact with AWS?</h3>
-<p>A: Through APIs, usually via SDKs (software development kits) or the CLI (command line interface).</p>
-
-<h3>Q: What are the main ways to interact with AWS?</h3>
-<p>A: You've got options: the web Console, CLI, SDKs, and direct API calls.</p>
-
-<h3>Q: Why is automation a big deal in the cloud?</h3>
-<p>A: It reduces errors and speeds up deployments. Less human error, more consistency.</p>
-
-<h3>Q: What's cool about Elastic Beanstalk?</h3>
-<p>A: It simplifies deployment and management of web apps. Less time fiddling with settings, more time coding.</p>
-
-<h3>Q: How does CloudFormation help manage AWS resources?</h3>
-<p>A: It lets you create and manage AWS resources using templates. Like a blueprint for your entire AWS setup.</p>
-
-<h3>Q: What's the best practice for deploying in AWS?</h3>
-<p>A: Use multiple Availability Zones for high availability. Don't put all your eggs in one basket!</p>
-
-<h1>Amazon EC2 and AWS Computing Services Study Guide</h1>
-
-<h2>Amazon EC2 Basics</h2>
-
-<h3>Q: What's Amazon EC2 in a nutshell?</h3>
-<p>A: EC2 (Elastic Compute Cloud) is like renting virtual servers in the cloud. It's flexible, scalable, and you only pay for what you use.</p>
-
-<h3>Q: What's so great about EC2?</h3>
-<p>A: EC2 shines because it's:
-<ul>
-  <li>Scalable: Grow or shrink resources as needed</li>
-  <li>Cost-effective: Pay only for what you use</li>
-  <li>Flexible: Choose your OS, storage, and networking</li>
-  <li>Reliable: Runs on Amazon's proven network infrastructure</li>
-</ul>
-</p>
-
-<h3>Q: What's a Security Group in EC2?</h3>
-<p>A: Think of it as a virtual firewall for your EC2 instances. It controls inbound and outbound traffic, like a bouncer for your server.</p>
-
-<h3>Q: How can I buy EC2 instances?</h3>
-<p>A: You've got four main options:
-<ul>
-  <li>On-Demand: Pay by the second, no commitments</li>
-  <li>Reserved: Pay upfront for 1 or 3 years, get a discount</li>
-  <li>Spot: Bid on spare EC2 capacity, can be cheaper but less reliable</li>
-  <li>Dedicated Hosts: Your own physical servers, good for compliance or licensing needs</li>
-</ul>
-</p>
-
-<h3>Q: How does EC2 pricing work?</h3>
-<p>A: You pay for compute capacity per hour or second. Prices vary based on instance type, region, and purchasing option.</p>
-
-<h3>Q: What's an AMI?</h3>
-<p>A: An Amazon Machine Image is like a template for your instance. It includes the OS and any additional software you need.</p>
-
-<h3>Q: How does EC2 play with other AWS services?</h3>
-<p>A: EC2 integrates well with many AWS services. For example, it can use S3 for storage, CloudWatch for monitoring, and ELB for load balancing.</p>
-
-<h2>AWS Computing Models</h2>
-
-<h3>Q: What computing models does AWS offer?</h3>
-<p>A: AWS provides three main models:
-<ul>
-  <li>Instances: Virtual servers (like EC2)</li>
-  <li>Containers: Lightweight, portable computing environments</li>
-  <li>Serverless: Run code without managing servers</li>
-</ul>
-</p>
-
-<h3>Q: What are containers good for?</h3>
-<p>A: Containers are great for:
-<ul>
-  <li>Consistent development environments</li>
-  <li>Easy application packaging and deployment</li>
-  <li>Efficient resource use</li>
-</ul>
-</p>
-
-<h3>Q: When would I use serverless computing?</h3>
-<p>A: Serverless is perfect for:
-<ul>
-  <li>Event-driven applications</li>
-  <li>Microservices</li>
-  <li>Scenarios where you don't want to manage infrastructure</li>
-</ul>
-</p>
-
-<h3>Q: When might I consider a hybrid deployment?</h3>
-<p>A: Consider hybrid when you:
-<ul>
-  <li>Have specific workloads that must stay on-premises</li>
-  <li>Need to meet certain regulatory requirements</li>
-  <li>Want to gradually move to the cloud</li>
-</ul>
-</p>
-
-<h2>Popular AWS Computing Services</h2>
-
-<h3>Q: What's AWS Lambda?</h3>
-<p>A: Lambda is AWS's serverless computing service. You upload your code, and Lambda runs it without you needing to manage servers.</p>
-
-<h3>Q: What about Amazon ECS?</h3>
-<p>A: ECS (Elastic Container Service) is for running and managing Docker containers. It's like a playground for your containerized apps.</p>
-
-<h3>Q: How's AWS Fargate different from EC2?</h3>
-<p>A: Fargate is serverless containers. Unlike EC2 where you manage the underlying instances, with Fargate you just run your containers and AWS handles the rest.</p>
-
-<h3>Q: Why use Elastic Beanstalk?</h3>
-<p>A: Elastic Beanstalk makes it easy to deploy and scale web applications. It's like having AWS set everything up for you automatically.</p>
-
-<h2>EC2 Deep Dive</h2>
-
-<h3>Q: How does EC2 show off its elasticity?</h3>
-<p>A: EC2 can automatically scale up or down based on demand. You can add or remove capacity within minutes.</p>
-
-<h3>Q: How much control do I have over EC2 instances?</h3>
-<p>A: You have full control. You can access them like any other server, install software, configure settings, etc.</p>
-
-<h3>Q: What security features does EC2 offer?</h3>
-<p>A: EC2 provides:
-<ul>
-  <li>Security groups for firewall rules</li>
-  <li>Network ACLs for subnet-level security</li>
-  <li>Encryption for data at rest and in transit</li>
-  <li>IAM for access control</li>
-</ul>
-</p>
-
-<h3>Q: What are EC2's main components?</h3>
-<p>A: The key parts are:
-<ul>
-  <li>Amazon Machine Images (AMIs)</li>
-  <li>Instance types</li>
-  <li>Network interfaces</li>
-  <li>Storage options (EBS, instance store)</li>
-</ul>
-</p>
-
-<h3>Q: What should I think about when choosing an EC2 region?</h3>
-<p>A: Consider:
-<ul>
-  <li>Latency to your users</li>
-  <li>Cost (prices vary by region)</li>
-  <li>Compliance requirements</li>
-  <li>Available services (not all services are in all regions)</li>
-</ul>
-</p>
-
-<h3>Q: What's a VPC and why do I need it for EC2?</h3>
-<p>A: A Virtual Private Cloud is your own private section of the AWS cloud. It's where your EC2 instances live, giving you network isolation and control.</p>
-
-<h3>Q: What are subnets in EC2?</h3>
-<p>A: Subnets are sections of a VPC. They help you organize and secure your resources, like putting different departments on different floors of a building.</p>
-
-<h3>Q: How do I launch an EC2 instance?</h3>
-<p>A: The basic steps are:
-<ol>
-  <li>Choose an AMI</li>
-  <li>Select an instance type</li>
-  <li>Configure instance details (VPC, subnet, etc.)</li>
-  <li>Add storage</li>
-  <li>Add tags</li>
-  <li>Configure security group</li>
-  <li>Review and launch</li>
-</ol>
-</p>
-
-<h3>Q: Why is tagging important in EC2?</h3>
-<p>A: Tags help you organize, track, and manage your EC2 resources. They're like labels that make it easier to identify and group your instances.</p>
-
-<h3>Q: Can EC2 scale automatically?</h3>
-<p>A: Yes! You can use Auto Scaling to automatically adjust the number of EC2 instances based on conditions you define.</p>
-
-<h3>Q: What's great about using AMIs?</h3>
-<p>A: AMIs are awesome because they:
-<ul>
-  <li>Speed up deployment (your software is pre-installed)</li>
-  <li>Provide consistency across instances</li>
-  <li>Can be shared or sold to other AWS users</li>
-</ul>
-</p>
+#### Q: What's an API in AWS-speak?
+A: It's how you talk to AWS services programmatically. Like giving commands to AWS in a language it understands.
+
+#### Q: How do most people interact with AWS?
+A: Through APIs, usually via SDKs (software development kits) or the CLI (command line interface).
+
+#### Q: What are the main ways to interact with AWS?
+A: You've got options: the web Console, CLI, SDKs, and direct API calls.
+
+#### Q: Why is automation a big deal in the cloud?
+A: It reduces errors and speeds up deployments. Less human error, more consistency.
+
+#### Q: What's cool about Elastic Beanstalk?
+A: It simplifies deployment and management of web apps. Less time fiddling with settings, more time coding.
+
+#### Q: How does CloudFormation help manage AWS resources?
+A: It lets you create and manage AWS resources using templates. Like a blueprint for your entire AWS setup.
+
+#### Q: What's the best practice for deploying in AWS?
+A: Use multiple Availability Zones for high availability. Don't put all your eggs in one basket!
+
+# Amazon EC2 and AWS Computing Services Study Guide
+
+## Amazon EC2 Basics
+
+#### Q: What's Amazon EC2 in a nutshell?
+A: EC2 (Elastic Compute Cloud) is like renting virtual servers in the cloud. It's flexible, scalable, and you only pay for what you use.
+
+#### Q: What's so great about EC2?
+A: EC2 shines because it's:
+- Scalable: Grow or shrink resources as needed
+- Cost-effective: Pay only for what you use
+- Flexible: Choose your OS, storage, and networking
+- Reliable: Runs on Amazon's proven network infrastructure
+
+#### Q: What's a Security Group in EC2?
+A: Think of it as a virtual firewall for your EC2 instances. It controls inbound and outbound traffic, like a bouncer for your server.
+
+#### Q: How can I buy EC2 instances?
+A: You've got four main options:
+- On-Demand: Pay by the second, no commitments
+- Reserved: Pay upfront for 1 or 3 years, get a discount
+- Spot: Bid on spare EC2 capacity, can be cheaper but less reliable
+- Dedicated Hosts: Your own physical servers, good for compliance or licensing needs
+
+#### Q: How does EC2 pricing work?
+A: You pay for compute capacity per hour or second. Prices vary based on instance type, region, and purchasing option.
+
+#### Q: What's an AMI?
+A: An Amazon Machine Image is like a template for your instance. It includes the OS and any additional software you need.
+
+#### Q: How does EC2 play with other AWS services?
+A: EC2 integrates well with many AWS services. For example, it can use S3 for storage, CloudWatch for monitoring, and ELB for load balancing.
+
+## AWS Computing Models
+
+#### Q: What computing models does AWS offer?
+A: AWS provides three main models:
+- Instances: Virtual servers (like EC2)
+- Containers: Lightweight, portable computing environments
+- Serverless: Run code without managing servers
+
+#### Q: What are containers good for?
+A: Containers are great for:
+- Consistent development environments
+- Easy application packaging and deployment
+- Efficient resource use
+
+#### Q: When would I use serverless computing?
+A: Serverless is perfect for:
+- Event-driven applications
+- Microservices
+- Scenarios where you don't want to manage infrastructure
+
+#### Q: When might I consider a hybrid deployment?
+A: Consider hybrid when you:
+- Have specific workloads that must stay on-premises
+- Need to meet certain regulatory requirements
+- Want to gradually move to the cloud
+
+## Popular AWS Computing Services
+
+#### Q: What's AWS Lambda?
+A: Lambda is AWS's serverless computing service. You upload your code, and Lambda runs it without you needing to manage servers.
+
+#### Q: What about Amazon ECS?
+A: ECS (Elastic Container Service) is for running and managing Docker containers. It's like a playground for your containerized apps.
+
+#### Q: How's AWS Fargate different from EC2?
+A: Fargate is serverless containers. Unlike EC2 where you manage the underlying instances, with Fargate you just run your containers and AWS handles the rest.
+
+#### Q: Why use Elastic Beanstalk?
+A: Elastic Beanstalk makes it easy to deploy and scale web applications. It's like having AWS set everything up for you automatically.
+
+## EC2 Deep Dive
+
+#### Q: How does EC2 show off its elasticity?
+A: EC2 can automatically scale up or down based on demand. You can add or remove capacity within minutes.
+
+#### Q: How much control do I have over EC2 instances?
+A: You have full control. You can access them like any other server, install software, configure settings, etc.
+
+#### Q: What security features does EC2 offer?
+A: EC2 provides:
+- Security groups for firewall rules
+- Network ACLs for subnet-level security
+- Encryption for data at rest and in transit
+- IAM for access control
+
+#### Q: What are EC2's main components?
+A: The key parts are:
+- Amazon Machine Images (AMIs)
+- Instance types
+- Network interfaces
+- Storage options (EBS, instance store)
+
+#### Q: What should I think about when choosing an EC2 region?
+A: Consider:
+- Latency to your users
+- Cost (prices vary by region)
+- Compliance requirements
+- Available services (not all services are in all regions)
+
+#### Q: What's a VPC and why do I need it for EC2?
+A: A Virtual Private Cloud is your own private section of the AWS cloud. It's where your EC2 instances live, giving you network isolation and control.
+
+#### Q: What are subnets in EC2?
+A: Subnets are sections of a VPC. They help you organize and secure your resources, like putting different departments on different floors of a building.
+
+#### Q: How do I launch an EC2 instance?
+A: The basic steps are:
+1. Choose an AMI
+2. Select an instance type
+3. Configure instance details (VPC, subnet, etc.)
+4. Add storage
+5. Add tags
+6. Configure security group
+7. Review and launch
+
+#### Q: Why is tagging important in EC2?
+A: Tags help you organize, track, and manage your EC2 resources. They're like labels that make it easier to identify and group your instances.
+
+#### Q: Can EC2 scale automatically?
+A: Yes! You can use Auto Scaling to automatically adjust the number of EC2 instances based on conditions you define.
+
+#### Q: What's great about using AMIs?
+A: AMIs are awesome because they:
+- Speed up deployment (your software is pre-installed)
+- Provide consistency across instances
+- Can be shared or sold to other AWS users
