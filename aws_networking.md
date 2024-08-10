@@ -1,6 +1,11 @@
-# ![Networking Image Placeholder](#)
+# Networking
 
-## Networking
+<p align="center">
+  <img src="imageN.png">
+</p>
+
+## Summary
+This section covers the foundational aspects of networking in AWS, focusing on the Virtual Private Cloud (VPC) environment. It explains key components such as subnets, internet gateways, NAT gateways, route tables, and security measures like Security Groups and Network ACLs. You'll also learn about services like Amazon Route 53 for DNS management, AWS Direct Connect for dedicated network connections, and CloudFront for content delivery. This section is essential for understanding how to build and secure network infrastructures in the cloud.
 
 ### **What is a VPC in AWS, and why is it important?**
 A Virtual Private Cloud (VPC) in AWS is a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define. It is important because it provides complete control over your network configuration, including IP address ranges, subnets, route tables, and network gateways.
