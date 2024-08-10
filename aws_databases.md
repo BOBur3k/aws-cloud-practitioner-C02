@@ -1,10 +1,10 @@
 # Databases
 
 <p align="center">
-  <img src="imageD.png>
+  <img src="imageD.png" alt="AWS Logo">
 </p>
 
-## Summary 
+## Summary
 This section introduces AWS managed database services, covering relational databases like Amazon RDS and Aurora, NoSQL databases like DynamoDB, and data warehousing solutions like Amazon Redshift. You'll learn about the benefits of managed databases, including scalability, high availability, and security. The section also touches on migration tools like AWS DMS and schema conversion, helping you understand how to transition databases to the cloud. Understanding these concepts is vital for handling data and analytics in AWS.
 
 ### **What is Amazon RDS, and what are its key features?**
